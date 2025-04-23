@@ -1,0 +1,168 @@
+/* Стилі для сторінки деталей частини */
+
+/* Стилі для зображень */
+.main-image-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.main-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumbnail-item {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.thumbnail-item.active {
+    border-color: #007bff;
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-image-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f8f9fa;
+}
+
+.no-image-placeholder {
+    text-align: center;
+    color: #6c757d;
+}
+
+.no-image-placeholder i {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+/* Стилі для інформації про частину */
+.part-info {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.part-info div {
+    margin-bottom: 8px;
+}
+
+.part-info strong {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Стилі для статусів */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.status-inactive {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.status-repair {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-inspection {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+/* Стилі для табів */
+#partTabs {
+    margin-top: 30px;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Стилі для таблиці специфікацій */
+#specifications table {
+    margin-top: 15px;
+}
+
+/* Стилі для списку документів */
+.documents-list {
+    margin-top: 15px;
+}
+
+.documents-list i {
+    margin-right: 5px;
+}
+
+/* Стилі для карток з примітками */
+.card-header h3 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .main-image-container {
+        height: 300px;
+    }
+    
+    .thumbnail-item {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-image-container {
+        height: 250px;
+    }
+    
+    .thumbnail-gallery {
+        justify-content: center;
+    }
+}
